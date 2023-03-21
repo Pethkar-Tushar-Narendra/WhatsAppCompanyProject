@@ -6,7 +6,15 @@ const userSchema = new mongoose.Schema({
   online: { type: Boolean, default: true },
   socketId: { type: String },
   profilePic: { type: String },
-  messages: [],
+  messages: [
+    {
+      msgType: { type: String },
+      msg: { type: String },
+      reaction: { emoji: { type: String }, from: { type: String } },
+      read: { type: Boolean },
+    },
+  ],
+  blockedNo: [],
 });
 
 const User = mongoose.model("Users", userSchema);
