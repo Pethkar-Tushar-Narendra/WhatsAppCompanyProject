@@ -11,4 +11,6 @@ just do "cd backend && npm start"
 and "cd .."
 "cd /frontendWhatsApp && npm start".
 
+
+After going to webPage go to route "/web".
 Thank you 
